@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>萊爾校長 VS 柯P</title>
+  <link rel="icon" type="png" href="LiarWebPage/w945bdms.png">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+
+<style>
+  /* 深色模式樣式 */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  body.dark-mode .container {
+    background: #1e1e1e;
+    color: #f5f5f5;
+  }
+
+  body.dark-mode a {
+    color: #4dabf7;
+  }
+
+  body.dark-mode h1, body.dark-mode h2 {
+    color: #ffffff;
+}
+
+  /* 切換按鈕樣式 */
+  .dark-toggle {
+    margin: 10px 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+</style>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">切換深色模式</button>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+
+  window.onload = function() {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  }
+</script>
+
+
+<body>
+  <div class="container">
+    <h1>萊爾校長 VS 柯P</h1>
+    <p><strong>hello</strong></p>
+
+    <div class="section">
+      <h2>關於我</h2>
+      <p>
+        大家好!我是柯P，這裡是我的網站^^，會分享我最近在北所裡的生活，希望大家726可以投「不同意罷免」，<br>
+        如果可以幫我做這個問卷一個小紅心，也是最大的鼓勵💖 <br>
+        <a href="#">我要填問卷</a>
+      </p>
+      <p>
+        喜歡與熱情的台灣為目標！歡迎大家來！<br>
+        身高172公分，體重65.2公斤，喜歡唱歌、幫別人解決事情；<br>
+        有時候會分享日常生活裡發生的趣味故事和照片<br>
+        平時喜歡打電動、看電影和研究時事的我常把想法記錄起來
+      </p>
+      <p>想要認識我的人請撥打：0912345678</p>
+    </div>
+
+    <div class="section">
+      <h2>生活照</h2>
+      <img src="LiarWebPage/w945bdms.png" alt="生活照">
+    </div>
+
+    <div class="section">
+      <h2>我最喜歡做的事情</h2>
+      <ul>
+        <li>為台灣想想</li>
+        <li>用心過生活</li>
+        <li>讓大家更要好</li>
+        <li>看書</li>
+        <li>幫助大家</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>我很在行的事情</h2>
+      <ul>
+        <li>行醫救世，妙手回春</li>
+        <li>融合理科不同領域整合</li>
+        <li>反黑箱</li>
+        <li>反貪腐</li>
+        <li>跟網路鄉民們嗆聲！！！</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>關於賴校長</h2>
+      <p>網址：<a href="https://www.youtube.com/watch?v=Lrzcm-vJDEs" target="_blank">https://www.youtube.com/watch?v=Lrzcm-vJDEs</a></p>
+      <p>番外篇：<a href="https://www.youtube.com/watch?v=Nnnu8raz2Y" target="_blank">https://www.youtube.com/watch?v=Nnnu8raz2Y</a></p>
+    </div>
+  </div>
+</body>
+</html>
